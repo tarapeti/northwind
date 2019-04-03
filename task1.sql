@@ -1,0 +1,1 @@
+select products.product_name as Product, suppliers.company_name as Company from products inner join suppliers on products.supplier_id = suppliers.supplier_id order by products.product_name, suppliers.company_name asc;

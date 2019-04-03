@@ -1,0 +1,1 @@
+select suppliers.company_name as Company, count(*) as NumberOfProducts from suppliers inner join products on suppliers.supplier_id = products.supplier_id group by 1 order by count(*) desc, suppliers.company_name asc ;

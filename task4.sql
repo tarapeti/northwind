@@ -1,0 +1,1 @@
+select customers.company_name, string_agg(orders.order_id, ',') from customers inner join orders on customers.customer_id = orders.customer_id order by customers.company_name asc;

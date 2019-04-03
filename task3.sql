@@ -1,0 +1,1 @@
+select suppliers.company_name as Company from suppliers inner join products on suppliers.supplier_id = products.supplier_id group by 1 having count(*) = 5 order by suppliers.company_name asc ;
